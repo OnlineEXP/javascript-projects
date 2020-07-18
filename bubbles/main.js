@@ -6,7 +6,7 @@ function bubble(x, y, speed) {
   this.size = speed * 5;
   this.move = function() {
     this.y += this.speed;
-    this.speed++;
+    this.speed += 4;
   }
   this.display = function() {
     fill(0, 60, 255);
