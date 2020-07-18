@@ -33,6 +33,6 @@ function draw() {
     }
     bubbles[i].move();
     bubbles[i].display();
-    bubbles[i].speed += 2;
+    bubbles[i].speed += 0.01;
   }
 }
