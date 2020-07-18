@@ -34,5 +34,6 @@ function draw() {
     bubbles[i].move();
     bubbles[i].display();
     bubbles[i].speed += 0.01;
+    if (bubbles[i].speed >= 8) bubbles[i].speed = 8;
   }
 }
