@@ -42,7 +42,7 @@ function draw() {
         balls.push(new Ball(random(0, windowWidth), -50, random(-20, 20), random(0, 20), random(20, 25), color));
     }
     for (i = 0; i < balls.length; i++) {
-        if (balls[i].y < -100) balls.splice(i, 1);
+        if (balls[i].y - balls[i].size > windowHeight) balls.splice(i, 1);
         balls[i].move();
         balls[i].display();
     }
