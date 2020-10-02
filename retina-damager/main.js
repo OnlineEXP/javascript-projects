@@ -12,9 +12,9 @@ function windowResized() {
 function draw() {
 	if (s) {
 		background(0, 0, 0);
-		switch = false;
+		s = false;
 	} else {
 		background(255, 255, 255);
-		switch = true;
+		s = true;
 	}
 }
