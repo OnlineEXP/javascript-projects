@@ -1,4 +1,4 @@
-var switch = true;
+var s = true;
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
@@ -10,7 +10,7 @@ function windowResized() {
 }
 
 function draw() {
-	if (switch) {
+	if (s) {
 		background(0, 0, 0);
 		switch = false;
 	} else {
