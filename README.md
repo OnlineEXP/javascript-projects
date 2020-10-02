@@ -6,7 +6,7 @@ These are just some of my projects. Do whatever you want here.
 * About 30 minutes
 
 ### Bouncing Balls
-* [Link](https://onlineexp.github.io/javascript-projects/bouncingballs/)
+* [Link](https://onlineexp.github.io/javascript-projects/bouncing-balls/)
 * About 30 minutes
 
 ### Snake Game
