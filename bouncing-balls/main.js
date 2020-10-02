@@ -32,7 +32,7 @@ function setup() {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+    resizeCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
@@ -45,5 +45,11 @@ function draw() {
         if (balls[i].y < -100) balls.splice(i, 1);
         balls[i].move();
         balls[i].display();
+    }
+}
+
+function keyPressed() {
+    if (keyCode === 32) {
+        balls = [];
     }
 }
