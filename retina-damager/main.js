@@ -2,7 +2,7 @@ var s = true;
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
-	frameRate(30);
+	frameRate(20);
 }
 
 function windowResized() {
