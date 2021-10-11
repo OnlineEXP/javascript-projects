@@ -37,8 +37,8 @@ function draw() {
     }
     for (i = 0; i < projectiles.length; i++) {
         
-        balls[i].move();
-        balls[i].display();
+        projectiles[i].move();
+        projectiles[i].display();
     }
     fill(0, 255, 0);
     circle(windowWidth, windowHeight, 40);
