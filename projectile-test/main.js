@@ -1,5 +1,6 @@
 var projectiles = [];
 var tempdirection = 0;
+var cooldown = 0;
 
 function Projectile(x, y, speed, direction) {
     this.x = x;
@@ -7,8 +8,8 @@ function Projectile(x, y, speed, direction) {
     this.speed = speed;
     this.direction = direction;
     this.move = function() {
-        this.x += cos(direction) * this.speed;
-        this.y += sin(direction) * this.speed;
+        this.x += cos(this.direction) * this.speed;
+        this.y += sin(this.direction) * this.speed;
     }
     this.display = function() {
         //fill(color[0], color[1], color[2]);
@@ -31,10 +32,12 @@ function windowResized() {
 }
 
 function draw() {
+    cooldown--;
     background(220);
     if (mouseIsPressed) {
         tempdirection = acos((mouseX - windowWidth / 2) / (mouseY - windowHeight / 2));
         projectiles.push(new Projectile(windowWidth / 2, windowHeight / 2, 10, tempdirection));
+        cooldown = 1000;
     }
     for (i = 0; i < projectiles.length; i++) {
         
