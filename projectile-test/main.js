@@ -1,4 +1,5 @@
 var projectiles = [];
+var tempdirection = 0;
 
 function Projectile(x, y, speed, direction) {
     this.x = x;
@@ -32,7 +33,7 @@ function windowResized() {
 function draw() {
     background(220);
     if (mouseIsPressed) {
-        var direction = acos((mouseX - windowWidth / 2) / (mouseY - windowHeight / 2));
+        tempdirection = acos((mouseX - windowWidth / 2) / (mouseY - windowHeight / 2));
         projectiles.push(new Projectile(windowWidth / 2, windowHeight / 2, 10, direction));
     }
     for (i = 0; i < projectiles.length; i++) {
