@@ -34,7 +34,7 @@ function draw() {
     background(220);
     if (mouseIsPressed) {
         tempdirection = acos((mouseX - windowWidth / 2) / (mouseY - windowHeight / 2));
-        projectiles.push(new Projectile(windowWidth / 2, windowHeight / 2, 10, direction));
+        projectiles.push(new Projectile(windowWidth / 2, windowHeight / 2, 10, tempdirection));
     }
     for (i = 0; i < projectiles.length; i++) {
         
